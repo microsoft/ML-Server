@@ -1,5 +1,33 @@
 
+# Microsoft Machine Learning Server Samples and Solutions
+
+**Microsoft Machine Learning Server** supports R and Python deployments on Windows servers, with expansion to other supported platforms planned for late 2017.
+
+Microsoft Machine Learning Services brings the compute to the data by allowing R to run on the same computer as the database. It includes the Trusted Launchpad service, which runs outside the SQL Server process and communicates securely with the R or Python runtime.
+
+## Samples
+The following repositories contain sample code for you to try.
+
+| Repository | Description |
+|---|---|
+| [Microsoft/SQL-Server-R-Services-Samples](https://github.com/Microsoft/SQL-Server-R-Services-Samples) | R Samples |
+| [Microsoft/SQL-Server-Python-Samples](https://github.com/Microsoft/ML-Server-Python-Samples) | Python Samples |
+| [Microsoft/microsoft-r](https://github.com/Microsoft/microsoft-r) | Operationalization and the MicrosoftML package  |
+
+## Solutions
+These repositories are used in deployments  from [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/solutions) and/or [Microsoft AppSource](https://appsource.microsoft.com).  They may contain multiple languages and/or platform code.
+
+| Repository | Platforms | Languages |
+|---|---|--|
+| [Microsoft/r-server-campaign-optimization](https://github.com/Microsoft/r-server-campaign-optimization) | SQL Server, HDInsight Spark Cluster | R |
+| [Microsoft/r-server-hospital-length-of-stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) | SQL Server | R |
+| [Microsoft/r-server-loan-credit-risk](https://github.com/Microsoft/r-server-loan-credit-risk) | SQL Server, HDInsight Spark Cluster | R |
+| [Microsoft/r-server-loan-chargeoff](https://github.com/Microsoft/r-server-loan-chargeoff) | SQL Server, HDInsight Spark Cluster | R |
+| [Microsoft/r-server-fraud-detection](https://github.com/Microsoft/r-server-fraud-detection) | SQL Server, HDInsight Spark Cluster | R |
+
 # Contributing
+
+Please create a pull request if you have a repository you'd like to add to this list. 
 
 This project welcomes contributions and suggestions.  Most contributions require you to agree to a
 Contributor License Agreement (CLA) declaring that you have the right to, and actually do, grant us
