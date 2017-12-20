@@ -1,4 +1,3 @@
-
 # Microsoft Machine Learning Server Samples and Solutions
 
 **Microsoft Machine Learning Server** supports R and Python deployments on Windows servers, with expansion to other supported platforms planned for late 2017.
@@ -20,7 +19,7 @@ These repositories are used in deployments  from [Cortana Intelligence Gallery](
 | Repository | Platforms | Languages |
 |---|---|--|
 | [Microsoft/r-server-campaign-optimization](https://github.com/Microsoft/r-server-campaign-optimization) | SQL Server, HDInsight Spark Cluster | R |
-| [Microsoft/r-server-hospital-length-of-stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) | SQL Server | R |
+| [Microsoft/r-server-hospital-length-of-stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) | SQL Server | R, Python |
 | [Microsoft/r-server-loan-credit-risk](https://github.com/Microsoft/r-server-loan-credit-risk) | SQL Server, HDInsight Spark Cluster | R |
 | [Microsoft/r-server-loan-chargeoff](https://github.com/Microsoft/r-server-loan-chargeoff) | SQL Server, HDInsight Spark Cluster | R |
 | [Microsoft/r-server-fraud-detection](https://github.com/Microsoft/r-server-fraud-detection) | SQL Server, HDInsight Spark Cluster | R |
