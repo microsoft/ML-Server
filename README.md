@@ -1,8 +1,12 @@
+
+
 # Microsoft Machine Learning Server Samples and Solutions
 
 **Microsoft Machine Learning Server** supports R and Python deployments on Windows servers, with expansion to other supported platforms planned for late 2017.
 
 Microsoft Machine Learning Services brings the compute to the data by allowing R to run on the same computer as the database. It includes the Trusted Launchpad service, which runs outside the SQL Server process and communicates securely with the R or Python runtime.
+
+Use the MSDN Forum [Microsoft Machine Learning Server]( https://social.msdn.microsoft.com/Forums/en-US/home?forum=MicrosoftR) for  questions about ML Server.
 
 ## Samples
 The following repositories contain sample code for you to try.
