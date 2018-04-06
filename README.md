@@ -27,6 +27,7 @@ These repositories are used in deployments  from [Cortana Intelligence Gallery](
 | [Microsoft/r-server-loan-credit-risk](https://github.com/Microsoft/r-server-loan-credit-risk) | SQL Server, HDInsight Spark Cluster | R |
 | [Microsoft/r-server-loan-chargeoff](https://github.com/Microsoft/r-server-loan-chargeoff) | SQL Server, HDInsight Spark Cluster | R |
 | [Microsoft/r-server-fraud-detection](https://github.com/Microsoft/r-server-fraud-detection) | SQL Server, HDInsight Spark Cluster | R |
+| [Microsoft/ml-server-text-classification](https://github.com/Microsoft/ml-server-text-classification) | SQL Server | R, Python |
 
 # Contributing
 
