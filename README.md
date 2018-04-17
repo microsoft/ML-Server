@@ -23,7 +23,7 @@ These repositories are used in deployments  from [Azure AI Gallery](https://gall
 | Solution |  Documentation | Repository | Platforms | Languages |
 |---|---|--|--|--|
 | Campaign Optimization |  [Website](https://microsoft.github.io/r-server-campaign-optimization/) |  [GitHub](https://github.com/Microsoft/r-server-campaign-optimization) | SQL Server, HDInsight Spark Cluster | R |
-|  Predicting Hospital Length of Stay |  [Website](https://microsoft.github.io/r-server-campaign-optimizationr-server-hospital-length-of-stay/) |  [GitHub](https://github.com/Microsoft/r-server-hospital-length-of-stay) | SQL Server | R, Python |
+|  Predicting Hospital Length of Stay |  [Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) |  [GitHub](https://github.com/Microsoft/r-server-hospital-length-of-stay) | SQL Server | R, Python |
 | Loan Credit Risk |  [Website](https://microsoft.github.io/r-server-loan-credit-risk/) |  [GitHub](https://github.com/Microsoft/r-server-loan-credit-risk) | SQL Server, HDInsight Spark Cluster | R |
 | Loan ChargeOff Prediction |  [Website](https://microsoft.github.io//r-server-loan-chargeoff/) |  [GitHub](https://github.com/Microsoft//r-server-loan-chargeoff)  | SQL Server, HDInsight Spark Cluster | R |
 | Fraud Detection |  [Website](https://microsoft.github.io/r-server-fraud-detection/) |  [GitHub](https://github.com/Microsoft/r-server-fraud-detection) | SQL Server, HDInsight Spark Cluster | R |
