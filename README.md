@@ -18,16 +18,16 @@ The following repositories contain sample code for you to try.
 | [Microsoft/microsoft-r](https://github.com/Microsoft/microsoft-r) | Operationalization and the MicrosoftML package  |
 
 ## Solutions
-These repositories are used in deployments  from [Cortana Intelligence Gallery](https://gallery.cortanaintelligence.com/solutions) and/or [Microsoft AppSource](https://appsource.microsoft.com).  They may contain multiple languages and/or platform code.
+These repositories are used in deployments  from [Azure AI Gallery](https://gallery.cortanaintelligence.com/solutions) and/or [Microsoft AppSource](https://appsource.microsoft.com).  They may contain multiple languages and/or platform code.
 
-| Repository | Platforms | Languages |
-|---|---|--|
-| [Microsoft/r-server-campaign-optimization](https://github.com/Microsoft/r-server-campaign-optimization) | SQL Server, HDInsight Spark Cluster | R |
-| [Microsoft/r-server-hospital-length-of-stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) | SQL Server | R, Python |
-| [Microsoft/r-server-loan-credit-risk](https://github.com/Microsoft/r-server-loan-credit-risk) | SQL Server, HDInsight Spark Cluster | R |
-| [Microsoft/r-server-loan-chargeoff](https://github.com/Microsoft/r-server-loan-chargeoff) | SQL Server, HDInsight Spark Cluster | R |
-| [Microsoft/r-server-fraud-detection](https://github.com/Microsoft/r-server-fraud-detection) | SQL Server, HDInsight Spark Cluster | R |
-| [Microsoft/ml-server-text-classification](https://github.com/Microsoft/ml-server-text-classification) | SQL Server | R, Python |
+| Repository |  Documentation | Code | Platforms | Languages |
+|---|---|--|--|--|
+| Campaign Optimization |  [Website](https://microsoft.github.io/r-server-campaign-optimization/) |  [GitHub](https://github.com/Microsoft/r-server-campaign-optimization) | SQL Server, HDInsight Spark Cluster | R |
+|  Predicting Hospital Length of Stay |  [Website](https://microsoft.github.io/r-server-campaign-optimizationr-server-hospital-length-of-stay/) |  [GitHub](https://github.com/Microsoft/r-server-hospital-length-of-stay) | SQL Server | R, Python |
+| Loan Credit Risk |  [Website](https://microsoft.github.io/r-server-loan-credit-risk/) |  [GitHub](https://github.com/Microsoft/r-server-loan-credit-risk) | SQL Server, HDInsight Spark Cluster | R |
+| Loan ChargeOff Prediction |  [Website](https://microsoft.github.io//r-server-loan-chargeoff/) |  [GitHub](https://github.com/Microsoft//r-server-loan-chargeoff)  | SQL Server, HDInsight Spark Cluster | R |
+| Fraud Detection |  [Website](https://microsoft.github.io/r-server-fraud-detection/) |  [GitHub](https://github.com/Microsoft/r-server-fraud-detection) | SQL Server, HDInsight Spark Cluster | R |
+| Text Classification |  [Website](https://microsoft.github.io/ml-server-text-classification/) |  [GitHub](https://github.com/Microsoft/ml-server-text-classification) | SQL Server | R, Python |
 
 # Contributing
 
