@@ -28,7 +28,7 @@ These repositories are used in deployments  from [Azure AI Gallery](https://gall
 | Loan ChargeOff Prediction |  [Website](https://microsoft.github.io//r-server-loan-chargeoff/) |  [GitHub](https://github.com/Microsoft//r-server-loan-chargeoff)  | [SQL Server](https://aka.ms/loanchargeoffsql), [HDInsight Spark Cluster](https://aka.ms/loanchargeoffhdi)  | R |
 | Fraud Detection |  [Website](https://microsoft.github.io/r-server-fraud-detection/) |  [GitHub](https://github.com/Microsoft/r-server-fraud-detection) | [SQL Server](https://aka.ms/fraud-detection), [HDInsight Spark Cluster](https://aka.ms/fraud-detection-hdi)  | R |
 | Text Classification |  [Website](https://microsoft.github.io/ml-server-text-classification/) |  [GitHub](https://github.com/Microsoft/ml-server-text-classification) | [SQL Server](https://aka.ms/text-classification) | R, Python |
-| Image Similarity |  [Website](https://microsoft.github.io/ml-server-image-similarity/) |  [GitHub](https://github.com/Microsoft/ml-server-image-similarity) | [SQL Server](https://aka.ms/image-similarity) | R, Python |
+| Image Similarity |  [Website](https://microsoft.github.io/ml-server-image-similarity/) |  [GitHub](https://github.com/Microsoft/ml-server-image-similarity) | [SQL Server](https://aka.ms/image-similarity) | Python |
 
 # Contributing
 
