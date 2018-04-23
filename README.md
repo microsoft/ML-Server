@@ -20,7 +20,7 @@ The following repositories contain sample code for you to try.
 ## Solutions
 These repositories are used in deployments  from [Azure AI Gallery](https://gallery.cortanaintelligence.com/solutions) and/or [Microsoft AppSource](https://appsource.microsoft.com).  They may contain multiple languages and/or platform code.
 
-| Solution |  Documentation | Repository | Platforms | Languages |
+| Solution |  Documentation | Repository | Azure AI Gallery | Languages |
 |---|---|--|--|--|
 | Campaign Optimization |  [Website](https://microsoft.github.io/r-server-campaign-optimization/) |  [GitHub](https://github.com/Microsoft/r-server-campaign-optimization) | [SQL Server](https://aka.ms/campaignoptimization), [HDInsight Spark Cluster](https://aka.ms/campaign-hdi) | R |
 |  Predicting Hospital Length of Stay |  [Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) |  [GitHub](https://github.com/Microsoft/r-server-hospital-length-of-stay) | [SQL Server](https://aka.ms/hospital-los) | R, Python |
