@@ -73,26 +73,6 @@
                     "password": "Admin password for the virtual machines."
                 },
                 "osPlatform": "Windows"
-            },
-            {
-                "name": "oneboxPassword",
-                "type": "Microsoft.Compute.CredentialsCombo",
-                "label": {
-                    "password": "One-box Password",
-                    "confirmPassword": "Confirm One-box Password"
-                },
-                "toolTip": {
-                    "password": "Local administrator password for Machine Learning Server One-box Configuration"
-                },
-                "constraints": {
-                    "required": true,
-                    "customPasswordRegex": "^(?=.*?[A-Z])(?=.*?[a-z])(?=.*?[0-9])(?=.*?[~!@#$%^()-_+=|\/;:,.&<>;]).{12,16}$",
-                    "customValidationMessage": "One-box Password must be 12-16 characters long and contain at least 1 uppercase character(s), 1+ lowercase character(s), 1+ number(s), and 1+ special character(s) from ~!@#$%^()-_+=|\/;:,.&<>"
-                },
-                "options": {
-                    "hideConfirmation": true
-                },
-                "osPlatform": "Windows"
             }
         ],
         "steps": [
