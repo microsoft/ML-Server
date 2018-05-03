@@ -90,14 +90,6 @@
             "label": "Virtual machine size",
             "toolTip": "Select the size of the machine."
             },
-            "osPlatform": "Windows",
-            "imageReference": {
-              "publisher": "microsoft-ads",
-              "offer": "standard-data-science-vm",
-              "sku": "standard-data-science-vm",
-              "version": "latest"
-            }
-          },
           {
             "name": "storageAccount",
             "type": "Microsoft.Storage.StorageAccountSelector",
