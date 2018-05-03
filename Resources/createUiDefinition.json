@@ -23,32 +23,32 @@
         "constraints": {
           "allowedValues": [
             {
-              "label": "r-server-campaign-optimization",
-              "value": "Campaign Optimization"
+              "label": "Campaign Optimization",
+              "value": "r-server-campaign-optimization"
             },
             {
-              "label": "r-server-hospital-length-of-stay",
-              "value": "Predicting Hospital Length of Stay"
+              "label": "Predicting Hospital Length of Stay",
+              "value": "r-server-hospital-length-of-stay"
             },
             {
-              "label": "r-server-loan-credit-risk",
-              "value": "Loan Credit Risk"
+              "label": "Loan Credit Risk",
+              "value": "r-server-loan-credit-risk"
             },
             {
-              "label": "r-server-loan-chargeoff",
-              "value": "Loan ChargeOff"
+              "label": "Loan ChargeOff",
+              "value": "r-server-loan-chargeoff"
             },
             {
-              "label": "r-server-fraud-detection",
-              "value": "Online Fraud Detection"
+              "label": "Online Fraud Detection",
+              "value": "r-server-fraud-detection"
             },
             {
-              "label": "ml-server-text-classification",
-              "value": "Text Classification"
+              "label": "Text Classification",
+              "value": "ml-server-text-classification"
             },
             {
-              "label": "ml-server-image-similarity",
-              "value": "Image Similarity"
+              "label": "Image Similarity",
+              "value": "ml-server-image-similarity"
             }            
           ]
         },

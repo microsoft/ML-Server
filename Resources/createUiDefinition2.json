@@ -16,33 +16,45 @@
                 }
             },
             {
-                "name": "osType",
+                "name": "solutionName",
                 "type": "Microsoft.Common.DropDown",
-                "label": "OS Type",
-                "defaultValue": "WindowsServer2016",
-                "toolTip": "Machine Learning Server VM is available in four flavors - Windows Server 2016, CentOS based Linux, RedHat based Linux, Ubuntu based Linux",
+                "label": "Select the solution you wish to deploy",
+                "defaultValue": "Campaign Optimization",
+                "toolTip": "Choose one of the seven solutions to explore on your DSVM",
                 "constraints": {
-                    "allowedValues": [
-                        {
-                            "label": "WindowsServer2016",
-                            "value": "WS2016"
-                        },
-                        {
-                            "label": "CentOS",
-                            "value": "CentOS"
-                        },
-                        {
-                            "label": "RedHat",
-                            "value": "RedHat"
-                        },
-                        {
-                            "label": "Ubuntu",
-                            "value": "Ubuntu"
-                        }
-                    ]
+                        "allowedValues": [
+                          {
+                            "label": "Campaign Optimization",
+                            "value": "r-server-campaign-optimization"
+                          },
+                          {
+                            "label": "Predicting Hospital Length of Stay",
+                            "value": "r-server-hospital-length-of-stay"
+                          },
+                          {
+                            "label": "Loan Credit Risk",
+                            "value": "r-server-loan-credit-risk"
+                          },
+                          {
+                            "label": "Loan ChargeOff",
+                            "value": "r-server-loan-chargeoff"
+                          },
+                          {
+                            "label": "Online Fraud Detection",
+                            "value": "r-server-fraud-detection"
+                          },
+                          {
+                            "label": "Text Classification",
+                            "value": "ml-server-text-classification"
+                          },
+                          {
+                            "label": "Image Similarity",
+                            "value": "ml-server-image-similarity"
+                          }           
+                  ]
                 },
                 "visible": true
-            },
+              },
             {
                 "name": "adminUsername",
                 "type": "Microsoft.Compute.UserNameTextBox",
@@ -135,7 +147,7 @@
         ],
         "outputs": {
             "location": "[location()]",
-            "osType": "[basics('osType')]",
+            "solutionName": "[basics('solutionName')]",
             "adminUsername": "[basics('adminUsername')]",
             "adminPassword": "[basics('adminPassword').password]",
             "oneboxPassword": "[basics('oneboxPassword').password]",
