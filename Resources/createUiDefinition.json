@@ -1,119 +1,139 @@
 {
+  "$schema": "https://schema.management.azure.com/schemas/0.1.2-preview/CreateUIDefinition.MultiVm.json#",
   "handler": "Microsoft.Compute.MultiVm",
-  "version": "0.1.0-preview",
+  "version": "0.1.2-preview",
   "parameters": {
-    "basics": [
-      {
-        "name": "vmName",
-        "type": "Microsoft.Common.TextBox",
-        "label": "Name",
-        "toolTip": "The name of the virtual machine.",
-        "constraints": {
-          "required": true,
-          "regex": "^[a-zA-Z][a-zA-Z0-9-]{2,13}[a-zA-Z0-9]$",
-          "validationMessage": "VM names must be between 3 and 15 characters long, and can contain only numbers, letters, and hyphens."
-        }
-      },
-      {
-        "name": "solutionName",
-        "type": "Microsoft.Common.DropDown",
-        "label": "Select the solution you wish to deploy",
-        "defaultValue": "Campaign Optimization",
-        "toolTip": "Choose one of the seven solutions to explore on your DSVM",
-        "constraints": {
-          "allowedValues": [
-            {
-              "label": "Campaign Optimization",
-              "value": "r-server-campaign-optimization"
-            },
-            {
-              "label": "Predicting Hospital Length of Stay",
-              "value": "r-server-hospital-length-of-stay"
-            },
-            {
-              "label": "Loan Credit Risk",
-              "value": "r-server-loan-credit-risk"
-            },
-            {
-              "label": "Loan ChargeOff",
-              "value": "r-server-loan-chargeoff"
-            },
-            {
-              "label": "Online Fraud Detection",
-              "value": "r-server-fraud-detection"
-            },
-            {
-              "label": "Text Classification",
-              "value": "ml-server-text-classification"
-            },
-            {
-              "label": "Image Similarity",
-              "value": "ml-server-image-similarity"
-            }            
-          ]
-        },
-        "visible": true
-      },
-      {
-        "name": "adminUsername",
-        "type": "Microsoft.Compute.UserNameTextBox",
-        "label": "User name",
-        "toolTip": "Admin username for the virtual machines.",
-        "osPlatform": "Windows"
-      },
-      {
-        "name": "adminPassword",
-        "type": "Microsoft.Compute.CredentialsCombo",
-        "label": {
-          "password": "Password",
-          "confirmPassword": "Confirm password"
-        },
-        "toolTip": {
-          "password": "Admin password for the virtual machines."
-        },
-        "osPlatform": "Windows"
-      }
-    ],
-    "steps": [
-      {
-        "name": "infrastructureConfig",
-        "label": "Settings",
-        "subLabel": {
-          "preValidation": "Configure additional settings",
-          "postValidation": "Done"
-        },
-        "bladeTitle": "Settings",
-        "elements": [
+      "basics": [
           {
-            "name": "vmSize",
-            "type": "Microsoft.Compute.SizeSelector",
-            "label": "Virtual machine size",
-            "toolTip": "Select the size of the machine."
+              "name": "vmName",
+              "type": "Microsoft.Common.TextBox",
+              "label": "Name",
+              "toolTip": "The name of the virtual machine.",
+              "constraints": {
+                  "required": true,
+                  "regex": "^[a-zA-Z][a-zA-Z0-9-]{2,13}[a-zA-Z0-9]$",
+                  "validationMessage": "VM names must be between 3 and 15 characters long, and can contain only numbers, letters, and hyphens."
+              }
+          },
+          {
+              "name": "solutionName",
+              "type": "Microsoft.Common.DropDown",
+              "label": "Select the solution you wish to deploy",
+              "defaultValue": "Campaign Optimization",
+              "toolTip": "Choose one of the seven solutions to explore on your DSVM",
+              "constraints": {
+                      "allowedValues": [
+                        {
+                          "label": "Campaign Optimization",
+                          "value": "r-server-campaign-optimization"
+                        },
+                        {
+                          "label": "Predicting Hospital Length of Stay",
+                          "value": "r-server-hospital-length-of-stay"
+                        },
+                        {
+                          "label": "Loan Credit Risk",
+                          "value": "r-server-loan-credit-risk"
+                        },
+                        {
+                          "label": "Loan ChargeOff",
+                          "value": "r-server-loan-chargeoff"
+                        },
+                        {
+                          "label": "Online Fraud Detection",
+                          "value": "r-server-fraud-detection"
+                        },
+                        {
+                          "label": "Text Classification",
+                          "value": "ml-server-text-classification"
+                        },
+                        {
+                          "label": "Image Similarity",
+                          "value": "ml-server-image-similarity"
+                        }           
+                ]
+              },
+              "visible": true
             },
           {
-            "name": "storageAccount",
-            "type": "Microsoft.Storage.StorageAccountSelector",
-            "label": "Storage account",
-            "defaultValue": {
-              "name": "[concat(substring(guid(), 24, 12), 'dsvm')]",
-              "type": "Standard_LRS"
-            },
-            "options": {
-              "hideExisting": true
-            }
+              "name": "adminUsername",
+              "type": "Microsoft.Compute.UserNameTextBox",
+              "label": "User name",
+              "toolTip": "Admin username for the virtual machines.",
+              "osPlatform": "Windows"
+          },
+          {
+              "name": "adminPassword",
+              "type": "Microsoft.Compute.CredentialsCombo",
+              "label": {
+                  "password": "Password",
+                  "confirmPassword": "Confirm password"
+              },
+              "toolTip": {
+                  "password": "Admin password for the virtual machines."
+              },
+              "osPlatform": "Windows"
           }
-        ]
+      ],
+      "steps": [
+          {
+              "name": "infrastructureConfig",
+              "label": "Settings",
+              "subLabel": {
+                  "preValidation": "Configure additional settings",
+                  "postValidation": "Done"
+              },
+              "bladeTitle": "Settings",
+              "elements": [
+                  {
+                      "name": "vmSize",
+                      "type": "Microsoft.Compute.SizeSelector",
+                      "label": "Virtual machine size",
+                      "toolTip": "Select the size of the machine",
+                      "recommendedSizes": [
+                          "Standard_DS11_v2",
+                          "Standard_DS12_v2",
+                          "Standard_DS13_v2",
+                          "Standard_DS14_v2"
+                      ],
+                      "osPlatform": "Windows",
+                      "imageReference": {
+                          "publisher": "MicrosoftRServer",
+                          "offer": "MLServer-WS2016",
+                          "sku": "Enterprise"
+                      }
+                  },
+                  {
+                      "name": "storageAccount",
+                      "type": "Microsoft.Storage.StorageAccountSelector",
+                      "label": "Storage account",
+                      "defaultValue": {
+                          "name": "[concat(substring(guid(), 24, 12), 'dsvm')]",
+                          "type": "Standard_LRS"
+                      },
+                      "constraints": {
+                          "allowedTypes": [
+                              "Standard_LRS",
+                              "Standard_GRS",
+                              "Standard_RAGRS"
+                          ]
+                      },
+                      "options": {
+                          "hideExisting": true
+                      }
+                  }
+              ]
+          }
+      ],
+      "outputs": {
+          "location": "[location()]",
+          "solutionName": "[basics('solutionName')]",
+          "adminUsername": "[basics('adminUsername')]",
+          "adminPassword": "[basics('adminPassword').password]",
+          "vmSize": "[steps('infrastructureConfig').vmSize]",
+          "vmName": "[basics('vmName')]",
+          "storageAccountName": "[steps('infrastructureConfig').storageAccount.name]",
+          "storageAccountType": "[steps('infrastructureConfig').storageAccount.type]"
       }
-    ],
-    "outputs": {
-      "location": "[location()]",
-      "solutionName": "[basics('solutionName')]",
-      "adminUsername": "[basics('adminUsername')]",
-      "adminPassword": "[basics('adminPassword').password]",
-      "vmSize": "[steps('infrastructureConfig').vmSize]",
-      "vmName": "[basics('vmName')]",
-      "StorageAccountName": "[steps('infrastructureConfig').storageAccount.name]",
-      "storageAccountType": "[steps('infrastructureConfig').storageAccount.type]"
-    }
   }
 }
