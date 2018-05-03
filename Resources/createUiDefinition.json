@@ -1,0 +1,127 @@
+{
+  "handler": "Microsoft.Compute.MultiVm",
+  "version": "0.1.0-preview",
+  "parameters": {
+    "basics": [
+      {
+        "name": "vmName",
+        "type": "Microsoft.Common.TextBox",
+        "label": "Name",
+        "toolTip": "The name of the virtual machine.",
+        "constraints": {
+          "required": true,
+          "regex": "^[a-zA-Z][a-zA-Z0-9-]{2,13}[a-zA-Z0-9]$",
+          "validationMessage": "VM names must be between 3 and 15 characters long, and can contain only numbers, letters, and hyphens."
+        }
+      },
+      {
+        "name": "solutionName",
+        "type": "Microsoft.Common.DropDown",
+        "label": "Select the solution you wish to deploy",
+        "defaultValue": "Campaign Optimization",
+        "toolTip": "Choose one of the seven solutions to explore on your DSVM",
+        "constraints": {
+          "allowedValues": [
+            {
+              "label": "r-server-campaign-optimization",
+              "value": "Campaign Optimization"
+            },
+            {
+              "label": "r-server-hospital-length-of-stay",
+              "value": "Predicting Hospital Length of Stay"
+            },
+            {
+              "label": "r-server-loan-credit-risk",
+              "value": "Loan Credit Risk"
+            },
+            {
+              "label": "r-server-loan-chargeoff",
+              "value": "Loan ChargeOff"
+            },
+            {
+              "label": "r-server-fraud-detection",
+              "value": "Online Fraud Detection"
+            },
+            {
+              "label": "ml-server-text-classification",
+              "value": "Text Classification"
+            },
+            {
+              "label": "ml-server-image-similarity",
+              "value": "Image Similarity"
+            }            
+          ]
+        },
+        "visible": true
+      },
+      {
+        "name": "adminUsername",
+        "type": "Microsoft.Compute.UserNameTextBox",
+        "label": "User name",
+        "toolTip": "Admin username for the virtual machines.",
+        "osPlatform": "Windows"
+      },
+      {
+        "name": "adminPassword",
+        "type": "Microsoft.Compute.CredentialsCombo",
+        "label": {
+          "password": "Password",
+          "confirmPassword": "Confirm password"
+        },
+        "toolTip": {
+          "password": "Admin password for the virtual machines."
+        },
+        "osPlatform": "Windows"
+      }
+    ],
+    "steps": [
+      {
+        "name": "infrastructureConfig",
+        "label": "Settings",
+        "subLabel": {
+          "preValidation": "Configure additional settings",
+          "postValidation": "Done"
+        },
+        "bladeTitle": "Settings",
+        "elements": [
+          {
+            "name": "vmSize",
+            "type": "Microsoft.Compute.SizeSelector",
+            "label": "Virtual machine size",
+            "toolTip": "Select the size of the machine."
+            },
+            "osPlatform": "Windows",
+            "imageReference": {
+              "publisher": "microsoft-ads",
+              "offer": "standard-data-science-vm",
+              "sku": "standard-data-science-vm",
+              "version": "latest"
+            }
+          },
+          {
+            "name": "storageAccount",
+            "type": "Microsoft.Storage.StorageAccountSelector",
+            "label": "Storage account",
+            "defaultValue": {
+              "name": "[concat(substring(guid(), 24, 12), 'dsvm')]",
+              "type": "Standard_LRS"
+            },
+            "options": {
+              "hideExisting": true
+            }
+          }
+        ]
+      }
+    ],
+    "outputs": {
+      "location": "[location()]",
+      "solutionName": "[basics('solutionName')]",
+      "adminUsername": "[basics('adminUsername')]",
+      "adminPassword": "[basics('adminPassword').password]",
+      "vmSize": "[steps('infrastructureConfig').vmSize]",
+      "vmName": "[basics('vmName')]",
+      "StorageAccountName": "[steps('infrastructureConfig').storageAccount.name]",
+      "storageAccountType": "[steps('infrastructureConfig').storageAccount.type]"
+    }
+  }
+}
