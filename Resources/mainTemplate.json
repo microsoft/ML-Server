@@ -1,40 +1,41 @@
 {
-    "contentVersion": "1.0.0.0",
     "$schema": "http://schema.management.azure.com/schemas/2015-01-01/deploymentTemplate.json#",
+    "contentVersion": "1.0.0.0",
     "parameters": {
         "adminUsername": {
-            "type": "string",
+            "type": "String",
             "metadata": {
                 "description": "Username for the Virtual Machine."
             }
         },
         "adminPassword": {
-            "type": "securestring",
+            "type": "SecureString",
             "metadata": {
                 "description": "Password for the Virtual Machine."
             }
         },
         "vmName": {
-            "type": "string",
+            "type": "String",
             "metadata": {
                 "description": "Name for the Virtual Machine."
             }
         },
         "vmSize": {
-            "type": "string",
             "defaultValue": "Standard_DS4_v2",
+            "type": "String",
             "metadata": {
                 "description": "Size for the Virtual Machine."
             }
         },
         "solutionName": {
-            "type": "string",
+            "defaultValue": "text",
+            "type": "String",
             "metadata": {
                 "description": "Solution to add to the VM"
             }
         },
         "location": {
-            "type": "string",
+            "type": "String",
             "metadata": {
                 "description": "The region to deploy the resources into"
             }
@@ -60,7 +61,21 @@
         "vmSize": "[parameters('vmSize')]",
         "virtualNetworkName": "[parameters('vmName')]",
         "vnetID": "[resourceId('Microsoft.Network/virtualNetworks',variables('virtualNetworkName'))]",
-        "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]"
+        "subnetRef": "[concat(variables('vnetID'),'/subnets/',variables('subnetName'))]",
+        "fileUri_campaign":"https://raw.githubusercontent.com/Microsoft/r-server-campaign-optimization/master/Resources/ActionScripts/CampaignSetup.ps1",
+        "fileUri_hospital":"https://raw.githubusercontent.com/Microsoft/r-server-hospital-length-of-stay/master/Resources/ActionScripts/HospitalSetup.ps1",
+        "fileUri_lcr": "https://raw.githubusercontent.com/Microsoft/r-server-loan-credit-risk/master/Resources/ActionScripts/LoanCreditRiskSetup.ps1",
+        "fileUri_lco": "https://raw.githubusercontent.com/Microsoft/r-server-loan-chargeoff/master/Resources/ActionScripts/LoanChargeOffSetup.ps1",
+        "fileUri_fraud": "https://raw.githubusercontent.com/Microsoft/r-server-fraud-detection/master/Resources/ActionScripts/FraudSetup.ps1",
+        "fileUri_text": "https://raw.githubusercontent.com/Microsoft/ml-server-text-classification/master/Resources/ActionScripts/TextClassificationSetup.ps1",
+        "fileUri_image": "https://raw.githubusercontent.com/Microsoft/ml-server-image-similarity/master/resources/ActionScripts/ImageSimilaritySetup.ps1",
+        "commandToExecute_campaign": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File CampaignSetup.ps1 -serverName ',  parameters('vmName') ,' -username ',parameters('adminUsername'),' -password ',parameters('adminPassword'))]",
+        "commandToExecute_hospital": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File HospitalSetup.ps1 -serverName ',  parameters('vmName') ,' -username ',parameters('adminUsername'),' -password ',parameters('adminPassword'))]",
+        "commandToExecute_lcr": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File LoanCreditRiskSetup.ps1 -serverName ',  parameters('vmName') ,' -username ',parameters('adminUsername'),' -password ',parameters('adminPassword'))]",
+        "commandToExecute_lco": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File LoanChargeOffSetup.ps1 -serverName ',  parameters('vmName') ,' -username ',parameters('adminUsername'),' -password ',parameters('adminPassword'))]",
+        "commandToExecute_fraud": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File FraudSetup.ps1 -serverName ',  parameters('vmName') ,' -username ',parameters('adminUsername'),' -password ',parameters('adminPassword'))]",
+        "commandToExecute_text": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File TextClassificationSetup.ps1 -serverName ',  parameters('vmName') ,' -username ',parameters('adminUsername'),' -password ',parameters('adminPassword'))]",
+        "commandToExecute_image": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File ImageSimilaritySetup.ps1 -serverName ',  parameters('vmName') ,' -username ',parameters('adminUsername'),' -password ',parameters('adminPassword'),' -isDeploy ','Yes')]"
     },
     "resources": [
         {
@@ -73,9 +88,9 @@
             }
         },
         {
-            "apiVersion": "2015-05-01-preview",
             "type": "Microsoft.Network/publicIPAddresses",
             "name": "[variables('publicIPAddressName')]",
+            "apiVersion": "2015-05-01-preview",
             "location": "[parameters('location')]",
             "properties": {
                 "publicIPAllocationMethod": "[variables('publicIPAddressType')]",
@@ -85,9 +100,9 @@
             }
         },
         {
-            "apiVersion": "2015-05-01-preview",
             "type": "Microsoft.Network/virtualNetworks",
             "name": "[variables('virtualNetworkName')]",
+            "apiVersion": "2015-05-01-preview",
             "location": "[parameters('location')]",
             "properties": {
                 "addressSpace": {
@@ -106,14 +121,10 @@
             }
         },
         {
-            "apiVersion": "2015-05-01-preview",
             "type": "Microsoft.Network/networkInterfaces",
             "name": "[variables('nicName')]",
+            "apiVersion": "2015-05-01-preview",
             "location": "[parameters('location')]",
-            "dependsOn": [
-                "[concat('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]",
-                "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"
-            ],
             "properties": {
                 "ipConfigurations": [
                     {
@@ -129,12 +140,16 @@
                         }
                     }
                 ]
-            }
+            },
+            "dependsOn": [
+                "[concat('Microsoft.Network/publicIPAddresses/', variables('publicIPAddressName'))]",
+                "[concat('Microsoft.Network/virtualNetworks/', variables('virtualNetworkName'))]"
+            ]
         },
         {
-            "apiVersion": "2015-06-15",
             "type": "Microsoft.Compute/virtualMachines",
             "name": "[parameters('vmName')]",
+            "apiVersion": "2015-06-15",
             "location": "[parameters('location')]",
             "plan": {
                 "name": "[variables('sku')]",
@@ -144,10 +159,6 @@
             "tags": {
                 "Application": "DataScience"
             },
-            "dependsOn": [
-                "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
-                "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
-            ],
             "properties": {
                 "hardwareProfile": {
                     "vmSize": "[variables('vmSize')]"
@@ -193,32 +204,30 @@
                     "name": "CustomScriptExtension",
                     "apiVersion": "2017-03-30",
                     "location": "[parameters('location')]",
-                    "dependsOn": [
-                        "[resourceId('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
-                    ],
                     "properties": {
                         "publisher": "Microsoft.Compute",
                         "type": "CustomScriptExtension",
                         "typeHandlerVersion": "1.7",
-                        "autoUpgradeMinorVersion": false,   
+                        "autoUpgradeMinorVersion": false,
                         "settings": {
                             "fileUris": [
-                                "https://raw.githubusercontent.com/Microsoft/ml-server-text-classification/master/Resources/ActionScripts/TextClassificationSetup.ps1"
+                                "[variables(concat('fileUri_', parameters('solutionName')))]"
                             ]
                         },
                         "protectedSettings": {
-                            "commandToExecute": "[concat('powershell.exe -ExecutionPolicy Unrestricted -File TextClassificationSetup.ps1 -serverName ',  parameters('vmName') ,' -username ',parameters('adminUsername'),' -password ',parameters('adminPassword'))]"
+                            "commandToExecute": "[variables(concat('commandToExecute_', parameters('solutionName')))]"
                         }
-                    }
+                    },
+                    "dependsOn": [
+                        "[resourceId('Microsoft.Compute/virtualMachines/', variables('vmName'))]"
+                    ]
                 }
+            ],
+            "dependsOn": [
+                "[concat('Microsoft.Storage/storageAccounts/', variables('storageAccountName'))]",
+                "[concat('Microsoft.Network/networkInterfaces/', variables('nicName'))]"
             ]
-
         }
     ],
-    "outputs": {
-        "WebsiteAddress": {
-            "type": "string",
-            "value": "[concat('https://microsoft.github.io/', variables('solutionName'))]"
-        }
-    }
-  }
+    "outputs": {}
+}
