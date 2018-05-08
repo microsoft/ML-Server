@@ -3,41 +3,35 @@
     "contentVersion": "1.0.0.0",
     "parameters": {
         "adminUsername": {
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Username for the Virtual Machine."
             }
         },
         "adminPassword": {
-            "type": "SecureString",
+            "type": "securestring",
             "metadata": {
                 "description": "Password for the Virtual Machine."
             }
         },
         "vmName": {
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Name for the Virtual Machine."
             }
         },
         "vmSize": {
             "defaultValue": "Standard_DS4_v2",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Size for the Virtual Machine."
             }
         },
         "solutionName": {
             "defaultValue": "text",
-            "type": "String",
+            "type": "string",
             "metadata": {
                 "description": "Solution to add to the VM"
-            }
-        },
-        "location": {
-            "type": "String",
-            "metadata": {
-                "description": "The region to deploy the resources into"
             }
         }
     },
@@ -82,7 +76,7 @@
             "type": "Microsoft.Storage/storageAccounts",
             "name": "[variables('storageAccountName')]",
             "apiVersion": "2015-05-01-preview",
-            "location": "[parameters('location')]",
+            "location": "[resourceGroup().location]",
             "properties": {
                 "accountType": "[variables('storageAccountType')]"
             }
@@ -91,7 +85,7 @@
             "type": "Microsoft.Network/publicIPAddresses",
             "name": "[variables('publicIPAddressName')]",
             "apiVersion": "2015-05-01-preview",
-            "location": "[parameters('location')]",
+            "location": "[resourceGroup().location]",
             "properties": {
                 "publicIPAllocationMethod": "[variables('publicIPAddressType')]",
                 "dnsSettings": {
@@ -103,7 +97,7 @@
             "type": "Microsoft.Network/virtualNetworks",
             "name": "[variables('virtualNetworkName')]",
             "apiVersion": "2015-05-01-preview",
-            "location": "[parameters('location')]",
+            "location": "[resourceGroup().location]",
             "properties": {
                 "addressSpace": {
                     "addressPrefixes": [
@@ -124,7 +118,7 @@
             "type": "Microsoft.Network/networkInterfaces",
             "name": "[variables('nicName')]",
             "apiVersion": "2015-05-01-preview",
-            "location": "[parameters('location')]",
+            "location": "[resourceGroup().location]",
             "properties": {
                 "ipConfigurations": [
                     {
@@ -150,7 +144,7 @@
             "type": "Microsoft.Compute/virtualMachines",
             "name": "[parameters('vmName')]",
             "apiVersion": "2015-06-15",
-            "location": "[parameters('location')]",
+            "location": "[resourceGroup().location]",
             "plan": {
                 "name": "[variables('sku')]",
                 "publisher": "[variables('imagePublisher')]",
@@ -203,7 +197,7 @@
                     "type": "extensions",
                     "name": "CustomScriptExtension",
                     "apiVersion": "2017-03-30",
-                    "location": "[parameters('location')]",
+                    "location": "[resourceGroup().location]",
                     "properties": {
                         "publisher": "Microsoft.Compute",
                         "type": "CustomScriptExtension",
