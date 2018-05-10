@@ -91,10 +91,10 @@
                       "label": "Virtual machine size",
                       "toolTip": "Select the size of the machine",
                       "recommendedSizes": [
+                          "Standard_DS4_v2",
                           "Standard_DS11_v2",
                           "Standard_DS12_v2",
-                          "Standard_DS13_v2",
-                          "Standard_DS14_v2"
+                          "Standard_DS13_v2"
                       ],
                       "osPlatform": "Windows",
                       "imageReference": {
