@@ -59,7 +59,7 @@
               "name": "adminUsername",
               "type": "Microsoft.Compute.UserNameTextBox",
               "label": "User name",
-              "toolTip": "Admin username for the virtual machines.",
+              "toolTip": "User name for the virtual machine.",
               "osPlatform": "Windows"
           },
           {
@@ -70,7 +70,7 @@
                   "confirmPassword": "Confirm password"
               },
               "toolTip": {
-                  "password": "Admin password for the virtual machines."
+                  "password": "Password for the virtual machine."
               },
               "osPlatform": "Windows"
           }
@@ -88,7 +88,7 @@
                   {
                       "name": "vmSize",
                       "type": "Microsoft.Compute.SizeSelector",
-                      "label": "Virtual machine size",
+                      "label": "Virtual machine size.",
                       "toolTip": "Select the size of the machine",
                       "recommendedSizes": [
                           "Standard_DS4_v2",
