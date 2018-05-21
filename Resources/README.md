@@ -2,7 +2,7 @@
 
 The ARM template mainTemplate.json creates a DSVM in Azure and adds one of the seven possible ML Services solutions to the DSVM.
 
-** FIX THE urls BELOW **
+** FIX THE url BELOW **
 <a href='URLHERE' target="_blank">
     <img src="http://azuredeploy.net/deploybutton.png" />
 </a>
