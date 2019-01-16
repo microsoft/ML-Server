@@ -2,23 +2,25 @@
 
 # Microsoft Machine Learning Server Samples and Solutions
 
-**Microsoft Machine Learning Server** supports R and Python deployments on Windows servers, with expansion to other supported platforms planned for late 2017.
+**Microsoft Machine Learning Server** supports R and Python deployments on Windows, Linux and Hadoop. See the [Machine Learning server documentation](https://docs.microsoft.com/en-us/machine-learning-server/install/r-server-install-supported-platforms) for more information about supported platforms.
 
-Microsoft Machine Learning Services brings the compute to the data by allowing R to run on the same computer as the database. It includes the Trusted Launchpad service, which runs outside the SQL Server process and communicates securely with the R or Python runtime.
+Microsoft Machine Learning Services brings the compute to the data by allowing R or Python to run on the same computer as the database. It includes the Trusted Launchpad service, which runs outside the SQL Server process and communicates securely with the R or Python runtime.
 
-Use the MSDN Forum [Microsoft Machine Learning Server]( https://social.msdn.microsoft.com/Forums/en-US/home?forum=MicrosoftR) for  questions about ML Server.
+Use the MSDN Forum [Microsoft Machine Learning Server]( https://social.msdn.microsoft.com/Forums/en-US/home?forum=MicrosoftR) for questions about ML Server. If you have questions about the samples and solutions, please open an issue in the relevant repository.
+
+This repository serves as a landing page for you to more easily find the samples and solutions in other repositories. Please create a pull request if you have a repository you'd like to add to this list.
 
 ## Samples
 The following repositories contain sample code for you to try.
 
 | Repository | Description |
 |---|---|
-| [Microsoft/SQL-Server-R-Services-Samples](https://github.com/Microsoft/SQL-Server-R-Services-Samples) | R Samples |
-| [Microsoft/SQL-Server-Python-Samples](https://github.com/Microsoft/ML-Server-Python-Samples) | Python Samples |
+| [Microsoft/SQL-Server-R-Services-Samples](https://github.com/Microsoft/SQL-Server-R-Services-Samples) | Samples on how to use SQL Server ML Services with R. |
+| [Microsoft/SQL-Server-Python-Samples](https://github.com/Microsoft/ML-Server-Python-Samples) | Python Samples for ML Server |
 | [Microsoft/microsoft-r](https://github.com/Microsoft/microsoft-r) | Operationalization and the MicrosoftML package  |
 
 ## Solutions
-These repositories are used in deployments  from [Azure AI Gallery](https://gallery.cortanaintelligence.com/solutions) and/or [Microsoft AppSource](https://appsource.microsoft.com).  They may contain multiple languages and/or platform code.
+These repositories are used in deployments from [Azure AI Gallery](https://gallery.cortanaintelligence.com/solutions). They may contain multiple languages and/or platform code.
 
 | Solution |  Documentation | Repository | Azure AI Gallery | Languages |
 |---|---|--|--|--|
