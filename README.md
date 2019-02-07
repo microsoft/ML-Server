@@ -22,15 +22,16 @@ The following repositories contain sample code for you to try.
 ## Solutions
 They may contain multiple languages and/or platform code.
 
-| Solution |  Documentation | Repository | Available on SQL Server | Available on HDInsight Spark Cluster | Languages |
+|          |                |            | Availability | |
+| Solution |  Documentation | Repository | SQL Server | HDInsight Spark Cluster | Languages |
 |---|---|--|--|--|--|
-| Campaign Optimization |  [Website](https://microsoft.github.io/r-server-campaign-optimization/) |  [GitHub](https://github.com/Microsoft/r-server-campaign-optimization) | [x] whatever [ ] again, [HDInsight Spark Cluster](https://aka.ms/campaign-hdi) | R |
-|  Predicting Hospital Length of Stay |  [Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) |  [GitHub](https://github.com/Microsoft/r-server-hospital-length-of-stay) | [SQL Server](https://aka.ms/hospital-los) | R, Python |
-| Loan Credit Risk |  [Website](https://microsoft.github.io/r-server-loan-credit-risk/) |  [GitHub](https://github.com/Microsoft/r-server-loan-credit-risk) | [SQL Server](https://aka.ms/loan-credit-risk), [HDInsight Spark Cluster](https://aka.ms/loan-credit-risk-hdi) | R |
-| Loan ChargeOff Prediction |  [Website](https://microsoft.github.io//r-server-loan-chargeoff/) |  [GitHub](https://github.com/Microsoft//r-server-loan-chargeoff)  | [SQL Server](https://aka.ms/loanchargeoffsql), [HDInsight Spark Cluster](https://aka.ms/loanchargeoffhdi)  | R |
-| Fraud Detection |  [Website](https://microsoft.github.io/r-server-fraud-detection/) |  [GitHub](https://github.com/Microsoft/r-server-fraud-detection) | [SQL Server](https://aka.ms/fraud-detection), [HDInsight Spark Cluster](https://aka.ms/fraud-detection-hdi)  | R |
-| Text Classification |  [Website](https://microsoft.github.io/ml-server-text-classification/) |  [GitHub](https://github.com/Microsoft/ml-server-text-classification) | [SQL Server](https://aka.ms/text-classification) | R, Python |
-| Image Similarity |  [Website](https://microsoft.github.io/ml-server-image-similarity/) |  [GitHub](https://github.com/Microsoft/ml-server-image-similarity) | [SQL Server](https://aka.ms/image-similarity) | Python |
+| Campaign Optimization |  [Website](https://microsoft.github.io/r-server-campaign-optimization/) |  [GitHub](https://github.com/Microsoft/r-server-campaign-optimization) | :white_check_mark:|:white_check_mark:| R |
+|  Predicting Hospital Length of Stay |  [Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) |  [GitHub](https://github.com/Microsoft/r-server-hospital-length-of-stay) | :white_check_mark:| | R, Python |
+| Loan Credit Risk |  [Website](https://microsoft.github.io/r-server-loan-credit-risk/) |  [GitHub](https://github.com/Microsoft/r-server-loan-credit-risk) | :white_check_mark:| :white_check_mark: | R |
+| Loan ChargeOff Prediction |  [Website](https://microsoft.github.io//r-server-loan-chargeoff/) |  [GitHub](https://github.com/Microsoft//r-server-loan-chargeoff)  | :white_check_mark:| :white_check_mark:  | R |
+| Fraud Detection |  [Website](https://microsoft.github.io/r-server-fraud-detection/) |  [GitHub](https://github.com/Microsoft/r-server-fraud-detection) | :white_check_mark:| :white_check_mark:  | R |
+| Text Classification |  [Website](https://microsoft.github.io/ml-server-text-classification/) |  [GitHub](https://github.com/Microsoft/ml-server-text-classification) | :white_check_mark:| | R, Python |
+| Image Similarity |  [Website](https://microsoft.github.io/ml-server-image-similarity/) |  [GitHub](https://github.com/Microsoft/ml-server-image-similarity) | :white_check_mark:| | Python |
 
 # Contributing
 
