@@ -16,7 +16,7 @@ The following repositories contain sample code for you to try.
 | Repository | Description |
 |---|---|
 | [Microsoft/SQL-Server-R-Services-Samples](https://github.com/Microsoft/SQL-Server-R-Services-Samples) | Samples on how to use SQL Server ML Services with R. |
-| [Microsoft/SQL-Server-Python-Samples](https://github.com/Microsoft/ML-Server-Python-Samples) | Python Samples for ML Server |
+| [Microsoft/ML-Server-Python-Samples](https://github.com/Microsoft/ML-Server-Python-Samples) | Python Samples for ML Server |
 | [Microsoft/microsoft-r](https://github.com/Microsoft/microsoft-r) | Operationalization and the MicrosoftML package  |
 
 ## Solutions
