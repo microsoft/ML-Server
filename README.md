@@ -22,23 +22,23 @@ The following repositories contain sample code for you to try.
 ## Solutions
 They may contain multiple languages and/or platform code.
 
-| Solution |  Documentation | SQL Server | HDInsight Spark Cluster | Languages |
-|---|--|--|--|--|
-|[Campaign Optimization](https://github.com/Microsoft/r-server-campaign-optimization) |[Website](https://microsoft.github.io/r-server-campaign-optimization/) |     :white_check_mark:|:white_check_mark:| R |
-|[Customer Churn](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|:white_check_mark:||R|
-|[Energy Demand Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|:white_check_mark:||R|
-|[Fraud Detection](https://github.com/Microsoft/r-server-fraud-detection) |[Website](https://microsoft.github.io/r-server-fraud-detection/) | :white_check_mark:| :white_check_mark:  | R |
-|[Galaxy Classification](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Galaxies)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Galaxies)|:white_check_mark:||R|
-|[Length of Stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) |[Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) | :white_check_mark:| | R, Python |
-|[Image Similarity](https://github.com/Microsoft/ml-server-image-similarity) |[Website](https://microsoft.github.io/ml-server-image-similarity/) | :white_check_mark:| | Python |
-|[Loan ChargeOff Prediction](https://github.com/Microsoft/r-server-loan-chargeoff) |[Website](https://microsoft.github.io//r-server-loan-chargeoff/) |   :white_check_mark:| :white_check_mark:  | R |
-|[Loan Credit Risk](https://github.com/Microsoft/r-server-loan-credit-risk) |[Website](https://microsoft.github.io/r-server-loan-credit-risk/) | :white_check_mark:| :white_check_mark: | R |
-|[Predictive Maintenance (1)](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenance)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenance)|:white_check_mark:||R|
-|[Predictive Maintenance (2)](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenanceModelingGuide)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenanceModelingGuide)|:white_check_mark:||R|
-|[Product Cross Sell](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/ProductCrossSell)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/ProductCrossSell)|:white_check_mark:||R|
-|[Resume Matching](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/SQLOptimizationTips)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/SQLOptimizationTips)| :white_check_mark:||R|
-|[Retail Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/RetailForecasting)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/RetailForecasting)|:white_check_mark:||R|
-|[Text Classification](https://github.com/Microsoft/ml-server-text-classification) |[Website](https://microsoft.github.io/ml-server-text-classification/) |   :white_check_mark:| | R, Python |
+| Solution |  Documentation | SQL Server | HDInsight Spark Cluster | R | Python |
+|---|--|--|--|--|--|
+|[Campaign Optimization](https://github.com/Microsoft/r-server-campaign-optimization) |[Website](https://microsoft.github.io/r-server-campaign-optimization/) |     :white_check_mark:|:white_check_mark:| :white_check_mark: ||
+|[Customer Churn](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|:white_check_mark:||:white_check_mark:||
+|[Energy Demand Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|:white_check_mark:||:white_check_mark:||
+|[Fraud Detection](https://github.com/Microsoft/r-server-fraud-detection) |[Website](https://microsoft.github.io/r-server-fraud-detection/) | :white_check_mark:| :white_check_mark:  | :white_check_mark: ||
+|[Galaxy Classification](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Galaxies)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Galaxies)|:white_check_mark:||:white_check_mark:||
+|[Length of Stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) |[Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) | :white_check_mark:| | :white_check_mark: |:white_check_mark:|
+|[Image Similarity](https://github.com/Microsoft/ml-server-image-similarity) |[Website](https://microsoft.github.io/ml-server-image-similarity/) | :white_check_mark:| | |:white_check_mark: |
+|[Loan ChargeOff Prediction](https://github.com/Microsoft/r-server-loan-chargeoff) |[Website](https://microsoft.github.io//r-server-loan-chargeoff/) |   :white_check_mark:| :white_check_mark:  | :white_check_mark: ||
+|[Loan Credit Risk](https://github.com/Microsoft/r-server-loan-credit-risk) |[Website](https://microsoft.github.io/r-server-loan-credit-risk/) | :white_check_mark:| :white_check_mark: | :white_check_mark: ||
+|[Predictive Maintenance (1)](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenance)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenance)|:white_check_mark:||:white_check_mark:||
+|[Predictive Maintenance (2)](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenanceModelingGuide)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenanceModelingGuide)|:white_check_mark:||:white_check_mark:||
+|[Product Cross Sell](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/ProductCrossSell)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/ProductCrossSell)|:white_check_mark:||:white_check_mark:||
+|[Resume Matching](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/SQLOptimizationTips)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/SQLOptimizationTips)| :white_check_mark:||:white_check_mark:||
+|[Retail Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/RetailForecasting)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/RetailForecasting)|:white_check_mark:||:white_check_mark:||
+|[Text Classification](https://github.com/Microsoft/ml-server-text-classification) |[Website](https://microsoft.github.io/ml-server-text-classification/) |   :white_check_mark:| | :white_check_mark:|:white_check_mark:|
 
 # Contributing
 
