@@ -22,15 +22,15 @@ The following repositories contain sample code for you to try.
 ## Solutions
 They may contain multiple languages and/or platform code.
 
-| Solution |  Documentation | Repository | SQL Server | HDInsight Spark Cluster | Languages |
+| Solution |  Documentation | Industry | SQL Server | HDInsight Spark Cluster | Languages |
 |---|---|--|--|--|--|
-| Campaign Optimization |  [Website](https://microsoft.github.io/r-server-campaign-optimization/) |  [GitHub](https://github.com/Microsoft/r-server-campaign-optimization) | :white_check_mark:|:white_check_mark:| R |
-|  Predicting Hospital Length of Stay |  [Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) |  [GitHub](https://github.com/Microsoft/r-server-hospital-length-of-stay) | :white_check_mark:| | R, Python |
-| Loan Credit Risk |  [Website](https://microsoft.github.io/r-server-loan-credit-risk/) |  [GitHub](https://github.com/Microsoft/r-server-loan-credit-risk) | :white_check_mark:| :white_check_mark: | R |
-| Loan ChargeOff Prediction |  [Website](https://microsoft.github.io//r-server-loan-chargeoff/) |  [GitHub](https://github.com/Microsoft//r-server-loan-chargeoff)  | :white_check_mark:| :white_check_mark:  | R |
-| Fraud Detection |  [Website](https://microsoft.github.io/r-server-fraud-detection/) |  [GitHub](https://github.com/Microsoft/r-server-fraud-detection) | :white_check_mark:| :white_check_mark:  | R |
-| Text Classification |  [Website](https://microsoft.github.io/ml-server-text-classification/) |  [GitHub](https://github.com/Microsoft/ml-server-text-classification) | :white_check_mark:| | R, Python |
-| Image Similarity |  [Website](https://microsoft.github.io/ml-server-image-similarity/) |  [GitHub](https://github.com/Microsoft/ml-server-image-similarity) | :white_check_mark:| | Python |
+| [Campaign Optimization](https://github.com/Microsoft/r-server-campaign-optimization) |  [Website](https://microsoft.github.io/r-server-campaign-optimization/) | Retail<br/>Finance<br/>Services |    :white_check_mark:|:white_check_mark:| R |
+|  [Predicting Hospital Length of Stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) |  [Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) | Healthcare | :white_check_mark:| | R, Python |
+| [Loan Credit Risk](https://github.com/Microsoft/r-server-loan-credit-risk) |  [Website](https://microsoft.github.io/r-server-loan-credit-risk/) | Finance|:white_check_mark:| :white_check_mark: | R |
+| [Loan ChargeOff Prediction](https://github.com/Microsoft//r-server-loan-chargeoff) |  [Website](https://microsoft.github.io//r-server-loan-chargeoff/) | Finance |   :white_check_mark:| :white_check_mark:  | R |
+| [Fraud Detection](https://github.com/Microsoft/r-server-fraud-detection) |  [Website](https://microsoft.github.io/r-server-fraud-detection/) | Retail<br/>Finance<br/>Services|:white_check_mark:| :white_check_mark:  | R |
+| [Text Classification](https://github.com/Microsoft/ml-server-text-classification) |  [Website](https://microsoft.github.io/ml-server-text-classification/) | Not industry specific |   :white_check_mark:| | R, Python |
+| [Image Similarity](https://github.com/Microsoft/ml-server-image-similarity) |  [Website](https://microsoft.github.io/ml-server-image-similarity/) | Not industry specific | :white_check_mark:| | Python |
 
 # Contributing
 
