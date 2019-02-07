@@ -22,7 +22,6 @@ The following repositories contain sample code for you to try.
 ## Solutions
 They may contain multiple languages and/or platform code.
 
-|          |                |            | Availability | |
 | Solution |  Documentation | Repository | SQL Server | HDInsight Spark Cluster | Languages |
 |---|---|--|--|--|--|
 | Campaign Optimization |  [Website](https://microsoft.github.io/r-server-campaign-optimization/) |  [GitHub](https://github.com/Microsoft/r-server-campaign-optimization) | :white_check_mark:|:white_check_mark:| R |
