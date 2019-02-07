@@ -22,23 +22,23 @@ The following repositories contain sample code for you to try.
 ## Solutions
 They may contain multiple languages and/or platform code.
 
-| Solution |  Industry | Documentation / Description | SQL Server | HDInsight Spark Cluster | Languages |
-|---|---|--|--|--|--|
-|[Campaign Optimization](https://github.com/Microsoft/r-server-campaign-optimization) |  Retail<br/>Finance<br/>Services |[Website](https://microsoft.github.io/r-server-campaign-optimization/) |     :white_check_mark:|:white_check_mark:| R |
-|[Customer Churn](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|Retail<br/>Finance<br/>Services|Being able to predict when a customer is likely to churn helps retain them.|:white_check_mark:||R|
+| Solution |  Documentation / Description | SQL Server | HDInsight Spark Cluster | Languages |
+|---|--|--|--|--|
+|[Campaign Optimization](https://github.com/Microsoft/r-server-campaign-optimization) |[Website](https://microsoft.github.io/r-server-campaign-optimization/) |     :white_check_mark:|:white_check_mark:| R |
+|[Customer Churn](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|Being able to predict when a customer is likely to churn helps retain them.|:white_check_mark:||R|
 |[Energy Demand Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|Energy<br/>Utilities|Forecast electricity demands for multiple regions.|:white_check_mark:||R|
-|[Fraud Detection](https://github.com/Microsoft/r-server-fraud-detection) |  Retail<br/>Finance<br/>Services|[Website](https://microsoft.github.io/r-server-fraud-detection/) | :white_check_mark:| :white_check_mark:  | R |
-|[Galaxy Classification](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Galaxies)|Research|This template shows how to use deep learning and image data to classify galaxies.|:white_check_mark:||R|
-|[Length of Stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) | Healthcare |  [Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) | :white_check_mark:| | R, Python |
-|[Image Similarity](https://github.com/Microsoft/ml-server-image-similarity) | Not industry specific | [Website](https://microsoft.github.io/ml-server-image-similarity/) | :white_check_mark:| | Python |
-|[Loan ChargeOff Prediction](https://github.com/Microsoft/r-server-loan-chargeoff) |  Finance | [Website](https://microsoft.github.io//r-server-loan-chargeoff/) |   :white_check_mark:| :white_check_mark:  | R |
-|[Loan Credit Risk](https://github.com/Microsoft/r-server-loan-credit-risk) |  Finance|[Website](https://microsoft.github.io/r-server-loan-credit-risk/) | :white_check_mark:| :white_check_mark: | R |
-|[Predictive Maintenance (1)](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenance)|Manufacturing|Predict machine failures before they happen, to minimize down time, reduce costs and increase productivity. This template is comparable to the other Predictive Maintenance template. The problem is approached differently.|:white_check_mark:||R|
-|[Predictive Maintenance (2)](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenanceModelingGuide)|Manufacturing|Predicting machine failures before they happen. This template is comparable to the other Predictive Maintenance template. The problem is approached differently.|:white_check_mark:||R|
-|[Product Cross Sell](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/ProductCrossSell)|Retail<br/>Finance<br/>Services|Demonstrates how to develop and deploy end-to-end customer cross-sell prediction models.|:white_check_mark:||R|
-|[Resume Matching](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/SQLOptimizationTips)|Recruiting|This template focuses on optimizing the performance of machine learning solutions integrated with SQL Server by demonstrating how we can find the best candidates for a job opening among millions of resumes within a few seconds.| :white_check_mark:||R|
-|[Retail Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/RetailForecasting)|Retail|Predicting the product sales for a retail store helps reduce warehousing cost and save time.|:white_check_mark:||R|
-|[Text Classification](https://github.com/Microsoft/ml-server-text-classification) |Not industry specific |  [Website](https://microsoft.github.io/ml-server-text-classification/) |   :white_check_mark:| | R, Python |
+|[Fraud Detection](https://github.com/Microsoft/r-server-fraud-detection) |[Website](https://microsoft.github.io/r-server-fraud-detection/) | :white_check_mark:| :white_check_mark:  | R |
+|[Galaxy Classification](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Galaxies)|This template shows how to use deep learning and image data to classify galaxies.|:white_check_mark:||R|
+|[Length of Stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) |[Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) | :white_check_mark:| | R, Python |
+|[Image Similarity](https://github.com/Microsoft/ml-server-image-similarity) |[Website](https://microsoft.github.io/ml-server-image-similarity/) | :white_check_mark:| | Python |
+|[Loan ChargeOff Prediction](https://github.com/Microsoft/r-server-loan-chargeoff) |[Website](https://microsoft.github.io//r-server-loan-chargeoff/) |   :white_check_mark:| :white_check_mark:  | R |
+|[Loan Credit Risk](https://github.com/Microsoft/r-server-loan-credit-risk) |[Website](https://microsoft.github.io/r-server-loan-credit-risk/) | :white_check_mark:| :white_check_mark: | R |
+|[Predictive Maintenance (1)](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenance)|Predict machine failures before they happen, to minimize down time, reduce costs and increase productivity. This template is comparable to the other Predictive Maintenance template. The problem is approached differently.|:white_check_mark:||R|
+|[Predictive Maintenance (2)](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/PredictiveMaintenanceModelingGuide)|Predicting machine failures before they happen. This template is comparable to the other Predictive Maintenance template. The problem is approached differently.|:white_check_mark:||R|
+|[Product Cross Sell](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/ProductCrossSell)|Demonstrates how to develop and deploy end-to-end customer cross-sell prediction models.|:white_check_mark:||R|
+|[Resume Matching](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/SQLOptimizationTips)|This template focuses on optimizing the performance of machine learning solutions integrated with SQL Server by demonstrating how we can find the best candidates for a job opening among millions of resumes within a few seconds.| :white_check_mark:||R|
+|[Retail Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/RetailForecasting)|Predicting the product sales for a retail store helps reduce warehousing cost and save time.|:white_check_mark:||R|
+|[Text Classification](https://github.com/Microsoft/ml-server-text-classification) |[Website](https://microsoft.github.io/ml-server-text-classification/) |   :white_check_mark:| | R, Python |
 
 # Contributing
 
