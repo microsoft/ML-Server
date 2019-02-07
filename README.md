@@ -24,7 +24,7 @@ They may contain multiple languages and/or platform code.
 
 | Solution |  Documentation | SQL Server | HDInsight Spark Cluster | R | Python |
 |---|--|--|--|--|--|
-|[Campaign Optimization](https://github.com/Microsoft/r-server-campaign-optimization) |[Website](https://microsoft.github.io/r-server-campaign-optimization/) |     :white_check_mark:|:white_check_mark:| ![R](https://www.r-project.org/logo/Rlogo.svg) ||
+|[Campaign Optimization](https://github.com/Microsoft/r-server-campaign-optimization) |[Website](https://microsoft.github.io/r-server-campaign-optimization/) |     :white_check_mark:|:white_check_mark:| <img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" height="48"/> ||
 |[Customer Churn](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|:white_check_mark:||:white_check_mark:||
 |[Energy Demand Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|:white_check_mark:||:white_check_mark:||
 |[Fraud Detection](https://github.com/Microsoft/r-server-fraud-detection) |[Website](https://microsoft.github.io/r-server-fraud-detection/) | :white_check_mark:| :white_check_mark:  | :white_check_mark: ||
