@@ -23,7 +23,7 @@ The following repositories contain sample code for you to try.
 They may contain multiple languages and/or platform code.
 
 | Solution |  Documentation | SQL Server | HDInsight Spark Cluster | Languages |
-|---|--|--|--|--|--|
+|---|--|--|--|--|
 |[Campaign Optimization](https://github.com/Microsoft/r-server-campaign-optimization) |[Website](https://microsoft.github.io/r-server-campaign-optimization/) |     :white_check_mark:|:white_check_mark:| <img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" height="20"/> |
 |[Customer Churn](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|:white_check_mark:||<img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" height="20"/>|
 |[Energy Demand Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|:white_check_mark:||<img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" height="20"/>|
