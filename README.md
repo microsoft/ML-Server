@@ -28,7 +28,7 @@ They may contain multiple languages and/or platform code.
 |[Customer Churn](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|Retail<br/>Finance<br/>Services|Being able to predict when a customer is likely to churn helps retain them.|:white_check_mark:||R|
 |[Energy Demand Forecasting](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/EnergyDemandForecasting)|Energy<br/>Utilities|Forecast electricity demands for multiple regions.|:white_check_mark:||R|
 |[Fraud Detection](https://github.com/Microsoft/r-server-fraud-detection) |  Retail<br/>Finance<br/>Services|[Website](https://microsoft.github.io/r-server-fraud-detection/) | :white_check_mark:| :white_check_mark:  | R |
-|[Galaxy Classification](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Galaxies)|Research|This template shows how to use deep learning and image data to classify galaxies.|
+|[Galaxy Classification](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Galaxies)|Research|This template shows how to use deep learning and image data to classify galaxies.|:white_check_mark:||R|
 |[Length of Stay](https://github.com/Microsoft/r-server-hospital-length-of-stay) | Healthcare |  [Website](https://microsoft.github.io/r-server-hospital-length-of-stay/) | :white_check_mark:| | R, Python |
 |[Image Similarity](https://github.com/Microsoft/ml-server-image-similarity) | Not industry specific | [Website](https://microsoft.github.io/ml-server-image-similarity/) | :white_check_mark:| | Python |
 |[Loan ChargeOff Prediction](https://github.com/Microsoft/r-server-loan-chargeoff) |  Finance | [Website](https://microsoft.github.io//r-server-loan-chargeoff/) |   :white_check_mark:| :white_check_mark:  | R |
