@@ -84,15 +84,6 @@ function InstallOrUpdateSQLServerPowerShellModule
 ##########################################################################
 function CloneFromGIT
 {
-    param(
-        [String]
-        $SolutionFullName,
-        [String]
-        $solutionTemplatePath,
-        [String]
-        $SolutionPath
-    )
-        
     $clone = "clone https://github.com/Microsoft/$SolutionFullName $solutionTemplatePath"
     if (Test-Path $SolutionPath) {
         Write-Host "Solution has already been cloned"
