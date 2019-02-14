@@ -23,13 +23,22 @@ function ExecuteSQLScript
         [Parameter(Mandatory=$false)]
         [String]$dbName = $DatabaseName,
         [Parameter(Mandatory=$false)]
-        [String[]]$variables = ''
+        [String[]]$variables = @()
     )
     if($IsMixedMode -eq "Yes") {
-        Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile -Variable $variables
+        if($variables.Count -eq 0) {
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile
+        else {
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile -Variable $variables
+        }
     }
     else {
-        Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile -Variable $variables
+        if($variables.Count -eq 0) {
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile
+        }
+        else {
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile -Variable $variables
+        }
     }
 }
 function ExecuteBCP
