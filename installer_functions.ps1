@@ -120,3 +120,26 @@ function InstallPowerBI()
     Write-Host -ForeGroundColor Red " Error installing Power BI Desktop. Please install latest Power BI manually."
     }
 }
+
+function WriteThanksMessage
+{
+    param(
+        [String]
+        $SolutionName,
+        [String]
+        $serverName,
+        [String]
+        $databaseName,
+        [String]
+        $moreSolutionsURL
+    )
+    Write-Host("")
+    Write-Host -ForegroundColor 'green' ("###################################################################################################")
+    Write-Host -ForeGroundColor 'green' ("Deployment completed succesfully! Please note the following important information:")
+    Write-Host -ForeGroundColor 'green' ("Solution Name: $SolutionName")
+    Write-Host -ForeGroundColor 'green' ("Links to solution directory and help page are on the Desktop")
+    Write-Host -ForeGroundColor 'green' ("SQL Server: $serverName")
+    Write-Host -ForeGroundColor 'green' ("Database: $databaseName")
+    Write-Host -ForeGroundColor 'green' ("Thanks for installing this solution. Find more solutions at: $moreSolutionsURL")
+    Write-Host -ForegroundColor 'green' ("###################################################################################################")
+}
