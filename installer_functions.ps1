@@ -1,26 +1,7 @@
-###########################################################################################
-    # Function wrappers
-    # Used in installers for templates / samples for ML Server / SQL Server ML Services
- ##########################################################################################
+<#
  .SYNOPSIS
- Short description
- 
- .DESCRIPTION
- Long description
- 
- .PARAMETER query
- Parameter description
- 
- .PARAMETER dbName
- Parameter description
- 
- .EXAMPLE
- An example
- 
- .NOTES
- General notes
+ Function wrappers, Used in installers for templates / samples for ML Server / SQL Server ML Services
  #>
- ######
 function ExecuteSQL
     {
         param(
