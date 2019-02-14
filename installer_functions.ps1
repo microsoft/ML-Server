@@ -23,7 +23,7 @@ function ExecuteSQLScript
         [Parameter(Mandatory=$false)]
         [String]$dbName = $DatabaseName,
         [Parameter(Mandatory=$false)]
-        [String]$variables = ''
+        [String[]]$variables = ''
     )
     if($IsMixedMode -eq "Yes") {
         Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile -Variable $variables
