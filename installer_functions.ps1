@@ -28,6 +28,7 @@ function ExecuteSQLScript
     if($IsMixedMode -eq "Yes") {
         if($variables.Count -eq 0) {
             Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile
+        }
         else {
             Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile -Variable $variables
         }
