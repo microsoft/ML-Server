@@ -38,7 +38,7 @@ function ExecuteSQLScript
             Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile
         }
         else {
-            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile -Variable $variables
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile -Variable $variables - Verbose
         }
     }
 }
