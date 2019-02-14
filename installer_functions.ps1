@@ -21,13 +21,15 @@ function ExecuteSQL
         param(
         [String]$scriptfile,
         [Parameter(Mandatory=$false)]
-        [String]$dbName = $DatabaseName
+        [String]$dbName = $DatabaseName,
+        [Parameter(ValueFromRemainingArguments = $true)]
+        [Object[]]$MyArgs
         )
         if($IsMixedMode -eq "Yes") {
-            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile -Variable $MyArgs
         }
         else {
-            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile -Variable $MyArgs
         }
     }
     function ExecuteBCP
