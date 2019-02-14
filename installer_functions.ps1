@@ -143,3 +143,15 @@ function WriteThanksMessage
     Write-Host -ForeGroundColor 'green' ("Thanks for installing this solution. Find more solutions at: $moreSolutionsURL")
     Write-Host -ForegroundColor 'green' ("###################################################################################################")
 }
+
+function WriteInstallStartMessage
+{
+    param(
+        [String]
+        $SolutionName
+    )
+    Write-Host -ForegroundColor 'green' ("###################################################################################################")
+    Write-Host -ForeGroundColor 'green' ("This script will install ML Server sample solution $SolutionName")
+    Write-Host -ForegroundColor 'green' ("###################################################################################################")
+
+}
