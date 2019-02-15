@@ -10,10 +10,10 @@ function ExecuteSQL
         [String]$dbName = $DatabaseName
     )
     if($IsMixedMode -eq "Yes") {
-        Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -Query $query
+        Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -Query $query -QueryTimeout 100
     }
     else {
-        Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Query $query
+        Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Query $query -QueryTimeout 100
     }
 }
 function ExecuteSQLScript
