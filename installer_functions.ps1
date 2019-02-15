@@ -27,18 +27,18 @@ function ExecuteSQLScript
     )
     if($IsMixedMode -eq "Yes") {
         if($variables.Count -eq 0) {
-            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile -QueryTimeout 200000
         }
         else {
-            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile -Variable $variables
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -Username $username -Password $password -InputFile $scriptfile -QueryTimeout 200000 -Variable $variables
         }
     }
     else {
         if($variables.Count -eq 0) {
-            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile -QueryTimeout 200000
         }
         else {
-            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile -Variable $variables
+            Invoke-Sqlcmd -ServerInstance $serverName -Database $dbName -InputFile $scriptfile -QueryTimeout 200000 -Variable $variables
         }
     }
 }
