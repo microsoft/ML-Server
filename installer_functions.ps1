@@ -121,6 +121,9 @@ function InstallPowerBI()
     }
 }
 
+##########################################################################
+## WriteThanksMessage
+##########################################################################
 function WriteThanksMessage
 {
     param(
@@ -144,6 +147,9 @@ function WriteThanksMessage
     Write-Host -ForegroundColor 'green' ("###################################################################################################")
 }
 
+##########################################################################
+## WriteInstallStartMessage
+##########################################################################
 function WriteInstallStartMessage
 {
     param(
@@ -154,4 +160,33 @@ function WriteInstallStartMessage
     Write-Host -ForeGroundColor 'green' ("This script will install ML Server sample solution $SolutionName")
     Write-Host -ForegroundColor 'green' ("###################################################################################################")
 
+}
+
+##########################################################################
+## Change Auth from Windows to Mixed
+##########################################################################
+function ChangeAuthenticationFromWindowsToMixed
+{
+    param(
+        [string]$servername,
+        [string]$IsMixedMode,
+        [string]$username,
+        [string]$password
+    )
+    if ($IsMixedMode -eq 'Yes') {
+        if([string]::IsNullOrEmpty($username) -or [string]::IsNullOrEmpty($password)) {
+            $Credential = $Host.ui.PromptForCredential("Need credentials", "Please supply an user name and password to configure SQL for mixed authentication.", "", "")
+            $username = $credential.Username
+            $password = $credential.GetNetworkCredential().password 
+        }
+        Write-Host("Configuring SQL to used Mixed Authentication mode")
+        Invoke-Sqlcmd -Query "EXEC xp_instance_regwrite N'HKEY_LOCAL_MACHINE', N'Software\Microsoft\MSSQLServer\MSSQLServer', N'LoginMode', REG_DWORD, 2;" -ServerInstance "LocalHost" 
+        Write-Host("Creating login for user $username")
+        $Query = "IF NOT EXISTS (SELECT loginname from master.dbo.syslogins where name='$username') BEGIN CREATE LOGIN [$username] WITH PASSWORD=N'$password', DEFAULT_DATABASE=[master], CHECK_EXPIRATION=OFF, CHECK_POLICY=OFF END"
+        Invoke-Sqlcmd -ServerInstance $serverName -Database "master" -Query $Query -QueryTimeout 200000
+                    
+        Write-Host("Adding $username to [sysadmin] role")
+        $Query = "ALTER SERVER ROLE [sysadmin] ADD MEMBER $username"
+        Invoke-Sqlcmd -ServerInstance $serverName -Database "master" -Query $Query -QueryTimeout 200000
+    }
 }
