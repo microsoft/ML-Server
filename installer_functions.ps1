@@ -190,3 +190,30 @@ function ChangeAuthenticationFromWindowsToMixed
         Invoke-Sqlcmd -ServerInstance $serverName -Database "master" -Query $Query -QueryTimeout 200000
     }
 }
+
+##########################################################################
+## Install R Packages
+##########################################################################
+function InstallRPackages
+{
+    param(
+        [string]$SolutionPath
+    )
+    If ($InstallR -eq 'Yes') {
+        Write-Host("Installing R Packages")
+        Set-Location "$SolutionPath\Resources\"
+        # install R Packages
+        $Rscript_paths = "C:\Program Files\Microsoft\ML Server\R_SERVER\bin\x64\Rscript.exe", "C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\R_SERVICES\bin\x64\Rscript.exe", "C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\R_SERVICES\bin\x64\Rscript.exe"
+        $found = false
+        foreach ($p in $Rscript_paths) {
+            if (Test-Path -Path $p) {
+                Start-Process $p -ArgumentList "packages.R " -Wait
+                $found = true
+                break
+            }
+        }
+        if(-Not $found) {
+            Write-Host "Could not install R packages - please install them manually using file available in the Resources folder." -ForegroundColor Red
+        }           
+    }
+}
