@@ -204,11 +204,11 @@ function InstallRPackages
         Set-Location "$SolutionPath\Resources\"
         # install R Packages
         $Rscript_paths = "C:\Program Files\Microsoft\ML Server\R_SERVER\bin\x64\Rscript.exe", "C:\Program Files\Microsoft SQL Server\MSSQL13.MSSQLSERVER\R_SERVICES\bin\x64\Rscript.exe", "C:\Program Files\Microsoft SQL Server\MSSQL14.MSSQLSERVER\R_SERVICES\bin\x64\Rscript.exe"
-        $found = false
+        $found = $FALSE
         foreach ($p in $Rscript_paths) {
             if (Test-Path -Path $p) {
                 Start-Process $p -ArgumentList "packages.R " -Wait
-                $found = true
+                $found = $TRUE
                 break
             }
         }
