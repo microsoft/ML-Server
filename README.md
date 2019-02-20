@@ -19,13 +19,12 @@ The following repositories contain sample code for you to try.
 | [Microsoft/ML-Server-Python-Samples](https://github.com/Microsoft/ML-Server-Python-Samples) | Python Samples for ML Server |
 | [Microsoft/microsoft-r](https://github.com/Microsoft/microsoft-r) | Operationalization and the MicrosoftML package  |
 
-## Solutions
-They may contain multiple languages and/or platform code.
+Direct links to all the samples and solutions offered are below. They may contain multiple languages and/or platform code. 
 
 | Solution |  Documentation | Languages |
 |---|--|--|
-|[Binary Classification](https://github.com/Microsoft/ML-Server-Python-Samples/blob/master/plot_binary_classification.py)|[Code](https://github.com/Microsoft/ML-Server-Python-Samples/blob/master/plot_binary_classification.py)|<img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python" height="20"/>|
-|[Binary Classification](https://github.com/Microsoft/ML-Server-Python-Samples/blob/master/microsoftml/quickstarts/binary-classification/Binary+Classification+Quickstart.ipynb)|[Documentation](https://docs.microsoft.com/en-us/machine-learning-server/python/quickstart-binary-classification-with-microsoftml)|<img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python" height="20"/>|
+|[Binary Classification (1)](https://github.com/Microsoft/ML-Server-Python-Samples/blob/master/plot_binary_classification.py)|[Code](https://github.com/Microsoft/ML-Server-Python-Samples/blob/master/plot_binary_classification.py)|<img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python" height="20"/>|
+|[Binary Classification (2)](https://github.com/Microsoft/ML-Server-Python-Samples/blob/master/microsoftml/quickstarts/binary-classification/Binary+Classification+Quickstart.ipynb)|[Documentation](https://docs.microsoft.com/en-us/machine-learning-server/python/quickstart-binary-classification-with-microsoftml)|<img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python" height="20"/>|
 |[Campaign Optimization](https://github.com/Microsoft/r-server-campaign-optimization) |[Website](https://microsoft.github.io/r-server-campaign-optimization/) |    <img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" height="20"/> |
 |[Categorical features](https://github.com/Microsoft/ML-Server-Python-Samples/blob/master/plot_categorical_features.py)|[Code](https://github.com/Microsoft/ML-Server-Python-Samples/blob/master/plot_categorical_features.py)|<img src="https://www.python.org/static/community_logos/python-logo-generic.svg" alt="Python" height="20"/>|
 |[Customer Churn](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|[Repository](https://github.com/Microsoft/SQL-Server-R-Services-Samples/blob/master/Churn)|<img src="https://www.r-project.org/logo/Rlogo.svg" alt="R" height="20"/>|
